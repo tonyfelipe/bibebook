@@ -1,0 +1,15 @@
+bb-book (repositório)
+│
+├── index.html        ← página principal (biblioteca)
+│
+├── emagrece-ja/
+│   └── index.html   ← página de venda do Emagreça Já
+│
+├── receitas/
+│   └── index.html
+│
+├── temperos/
+│   └── index.html
+│
+└── app/
+    └── index.html   ← explicação + link pro webapp (Render)
