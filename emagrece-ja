@@ -7,6 +7,10 @@
 <body>
   <h1>Emagreça Já</h1>
   <p>Página de venda do ebook.</p>
+<a href="LINK_DO_PAGAMENTO" target="_blank">
+  <button>COMPRAR AGORA</button>
+</a>
+
 
   <a href="../">⬅ Voltar</a>
 </body>
