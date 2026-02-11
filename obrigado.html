@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Compra confirmada</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7f7;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      color: #2c7a2c;
-    }
-    p {
-      font-size: 16px;
-      margin: 20px 0;
-    }
-    a.botao {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
-      background: #2c7a2c;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 6px;
-    }
-    a.botao:hover {
-      background: #256325;
-    }
-  </style>
-</head>
+<meta charset="UTF-8">
+<title>Pagamento Confirmado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background: #111827;
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #22c55e;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #d1d5db;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #22c55e;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+</style>
+
+</head>
 <body>
 
-  <h1>✅ Pagamento confirmado!</h1>
+<div class="container">
+    <h1>✅ Pagamento Confirmado!</h1>
+    <p>Obrigado pela sua compra.<br>
+    Clique no botão abaixo para baixar o ebook <strong>Emagreça Já</strong>.</p>
 
-  <p>Obrigado pela sua compra.</p>
-  <p>Clique no botão abaixo para baixar o ebook <strong>Emagreceja</strong>.</p>
+    <a class="botao" href="downloads/emagreceja.pdf" download>
+        ⬇️ Baixar Ebook Agora
+    </a>
 
-  <a class="botao" href="/downloads/emagreceja.pdf" download>
-    ⬇️ Baixar Ebook Agora
-  </a>
-
-  <p style="margin-top:40px;font-size:14px;color:#555;">
-    Se o download não iniciar automaticamente, clique novamente no botão.
-  </p>
+    <div class="info">
+        Se o download não iniciar automaticamente,<br>
+        clique novamente no botão.
+    </div>
+</div>
 
 </body>
 </html>
