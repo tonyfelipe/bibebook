@@ -1,64 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- 
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  </style>
-</head>
-<body>
- {
-  display: flex;
-  flex-direction: column; /* Organiza os elementos em coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center;    /* Centraliza horizontalmente */
-  min-height: 100vh;      /* Garante que o corpo ocupe toda a altura da tela */
-  margin: 0;
-  text-align: center;     /* Centraliza o texto e elementos inline */
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emagreça Já - Ebook de Reeducação Alimentar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    header {
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-    p {
-      color: #cbd5f5;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px;
     }
-    a.card {
-      background: #1e293b;
+
+    .container {
+      background: white;
       border-radius: 12px;
-      padding: 25px;
-      text-decoration: none;
-      color: #f8fafc;
-      transition: 0.2s;
-    }
-    a.card:hover {
-      background: #FFFFFF;
-      transform: translateY(-3px);
-    }
-    footer {
-      margin: 40px 0 20px;
-      font-size: 0.85rem;
-      color: #94a3b8;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      padding: 60px 40px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      animation: slideIn 0.6s ease-out;
     }
 
-<header>
-  <h1>📚 BibeBook</h1>
-  <p>Sua biblioteca digital organizada e inteligente.</p>
-</header>
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    .cta-button:active {
+      transform: translateY(0);
+    }
+
+    .back-link {
+      color: #667eea;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .back-link:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+
+    .features {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    .feature-item {
+      margin: 15px 0;
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 14px 30px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 
 <section class="grid">
   <a class="card" href="emagrece-ja/">
